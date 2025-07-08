@@ -1,18 +1,12 @@
 const express = require('express')
 
-const app = express()
+const app = express();
 
-app.use(function(req, res, next) {
-   console.log("This is the middleware running")
-    next()
-})
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
 
-app.get('/', function(req, res) {
- res.send("Hello helo")
-})
-
-app.get('/profile', function(req, res) {
-    res.send("There are some changes")
+app.get('/', function(req, res){
+  res.send("Everything is working")  
 })
 
 app.listen(3000)

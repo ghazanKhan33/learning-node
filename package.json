@@ -1,13 +1,13 @@
 {
-  "name": "backend-learning",
+  "name": "first-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project is only for learning",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
-  "author": "Ghazan Khan",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0"
